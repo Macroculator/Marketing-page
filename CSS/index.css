@@ -126,6 +126,38 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Raleway', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .nav-container {
   width: 100%;
   border-bottom: 1px solid black;
@@ -137,13 +169,14 @@ nav {
 }
 nav a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: black;
+  margin: 0 4%;
 }
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: #DB7C1E;
   width: 100%;
 }
