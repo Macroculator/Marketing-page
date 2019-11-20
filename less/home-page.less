@@ -1,7 +1,273 @@
 .container{
-    border: solid red 2px;
+   
     
     .Top-section{
-        border: solid red 2px;
+       
+        display: flex;
+        flex-direction: row;
+        margin: 4%;
+        padding: 5%;
+        
+
+        .text{
+            display: flex;
+           
+            flex-direction: column;
+            margin: 10% 10%;
+            height: auto;
+            width: auto;
+
+            h1{
+                display: flex;
+               
+                font-size: 2rem;
+                height:20%;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+               
+                height: 55%;
+                margin: 5%;
+                font-size: 1rem;
+            }
+            div{
+                
+                display: flex;
+                justify-content: center;
+                height: 20%;
+                align-items: center;
+                
+                
+                .btn{
+                    display: flex;
+                    justify-content:center;
+                    width: 25%;
+                    background-color: @zest;
+                    color: white;
+                    margin: 0;
+                    height: 70%;
+                    cursor: pointer;
+                    font-size: 1.4rem;
+                    border-radius: 5px;
+                   
+                    
+                    &:hover {
+                        background-color:@mossGreen;
+                        color: #0d0e25;
+                    }
+                }
+
+
+            }
+            
+            
+
+
+        }
+
+        .image{
+          
+
+            img{
+                margin: 5%;
+                
+            }
+        }
+    }
+
+    .Mid-section{
+        display: flex;
+        flex-direction:column;
+        
+     
+        
+
+        .section1{
+            display: flex;
+            flex-direction: row;
+            margin: 5%;
+            align-items: center;
+            justify-content: center;
+           
+
+            .btn{
+                
+                display: flex;
+                justify-content:center;
+                width: 10%;
+                background-color:@mossGreen;
+                color: white;
+                margin: 5%;
+                height: 70%;
+                cursor: pointer;
+                font-size: 1.4rem;
+                border-radius: 5px;
+            
+                &:hover {
+                    background-color:@zest;
+                    color: #0d0e25;
+                }
+            }
+            div{
+                
+                
+                
+                
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    
+                    font-size: 1.5rem;
+                    margin: 5%;
+                
+                }
+            
+                
+                p{
+                    
+                    display:flex;
+                    justify-content: center;
+                    align-content: center;
+
+                }
+                
+            }
+           
+
+            
+            
+        }
+
+
+
+        .section2{
+            margin: 5%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            
+
+            .btn{
+                display: flex;
+                justify-content:center;
+                width: 10%;
+                background-color: @zest;
+                color: white;
+                margin: 5%;
+                height: 70%;
+                cursor: pointer;
+                font-size: 1.4rem;
+                border-radius: 5px;
+               
+                
+                &:hover {
+                    background-color:@mossGreen;
+                    color: #0d0e25;
+                }
+            }
+            div{
+                
+                h2{
+                    display: flex;
+                    justify-content: center;
+                   
+                    font-size: 1.5rem;
+                    margin: 5%;
+                }
+                p{
+                   
+                }
+            } 
+            
+           
+        }
+    }
+
+    .Articles{
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        align-items: center;
+        margin: 0;
+        
+      
+        article{
+            
+            margin-top:0;
+            width:25%;
+            height: max-content;
+           
+            div{
+                display: flex;
+                
+                justify-content: space-evenly;
+                
+                img{
+                    
+                    border-radius: 20px;
+                    width:300px;
+                    height:250px;
+                   
+                }
+            }
+          
+            a{
+                display: flex;
+                
+                font-size: 1.2rem;
+                
+                text-decoration: none;
+                color: @zest;
+                margin: 2% 20%;
+                
+            }
+            
+            
+            
+            p{
+                display: flex;
+                
+                height: fit-content;
+               
+                margin:2% 4%;
+
+            }
+        }
+    }
+    .End-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+
+        h2{
+            display: flex;
+            font-size: 2rem;
+            align-self: center;
+            justify-content: center;
+           
+        }
+
+        .btn{
+            display: flex;
+            justify-content:center;
+            width: 15%;
+            height: 10%;
+            background-color: @zest;
+            color: white;
+            margin: 3%;
+
+            cursor: pointer;
+            font-size: 1.7rem;
+            border-radius: 5px;
+            
+            
+            &:hover {
+                background-color:@mossGreen;
+                color: #0d0e25;
+            }
+        }
     }
 }
