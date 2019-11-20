@@ -164,7 +164,7 @@ nav {
   align-items: center;
   align-content: center;
   height: 45px;
-  background: #97BC62FF;
+  background: #DB7C1E;
 }
 nav a {
   text-decoration: none;
@@ -182,7 +182,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #97BC62FF;
+  background-color: #DB7C1E;
   width: 100%;
   height: 50px;
 }
