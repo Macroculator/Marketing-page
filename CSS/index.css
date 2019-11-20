@@ -153,11 +153,6 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
 .nav-container {
   width: 100%;
   border-bottom: 1px solid black;
