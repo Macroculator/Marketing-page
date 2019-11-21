@@ -160,16 +160,25 @@ p {
 }
 .nav-container {
   width: 100%;
-  border-bottom: 1px solid black;
+  height: 100px;
+}
+.anchor-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  width: 30%;
 }
 nav {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 75px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 1px rgba(80, 78, 80, 0.1);
   background: #DB7C1E;
 }
 nav a {
@@ -190,7 +199,13 @@ footer {
   align-items: center;
   background-color: #DB7C1E;
   width: 100%;
-  height: 50px;
+  height: 70px;
+}
+footer a {
+  text-decoration: none;
+}
+footer p {
+  color: white;
 }
 .container .Top-section {
   display: flex;
@@ -441,6 +456,8 @@ footer {
   justify-content: center;
   margin-top: 5%;
   font-size: 5.5rem;
+  font-weight: bold;
+  padding-top: 10px;
 }
 .team-box {
   display: flex;
@@ -453,6 +470,11 @@ footer {
 .team-box a {
   text-decoration: none;
   color: black;
+}
+.team-box h2 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  padding-top: 10px;
 }
 .indiv-panel {
   text-align: center;
@@ -467,20 +489,26 @@ footer {
 }
 .linked-in-logo {
   max-width: 55px;
+  margin: 0 3px;
 }
 .about-h3 {
   margin: 5px 0;
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
+  .anchor-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3%;
+    width: 100%;
+  }
   .header-logo {
     display: none;
   }
   .nav-container {
     display: flex;
-    max-width: 100%;
-    width: 100%;
     justify-content: space-evenly;
+    width: 100%;
   }
   .team-box {
     display: flex;
@@ -488,19 +516,23 @@ footer {
     align-items: center;
   }
   .team-text {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin-bottom: 15%;
+    font-weight: bold;
   }
   .indiv-panel {
     border-radius: 15px;
     width: 55%;
   }
   .header-logo1 {
-    height: 80px;
+    height: 10rem;
   }
   .center-me {
     margin: 8% 0;
     text-align: center;
+  }
+  h1 {
+    font-weight: 700;
   }
 }
 @media (min-width: 500px) {
