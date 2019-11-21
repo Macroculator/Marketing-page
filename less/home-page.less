@@ -7,7 +7,8 @@
         display: flex;
         flex-direction: row;
         margin: 0;
-        padding: 10%;
+       
+        
         
         
         border-bottom-left-radius:50%;
@@ -18,11 +19,9 @@
         background-attachment: fixed;
         background-position: top;
         @media @phone {
-            margin: 0;
-            border-bottom-left-radius:50%;
-            border-bottom-right-radius:50%;
+            margin: 0%;
             background-size: 100%;
-            padding: 2%;
+            
             
             
             
@@ -31,25 +30,25 @@
 
         .text{
             display: flex;
+            
            
-
             flex-direction: column;
-            height: auto;
-            width: 50%;
+            height: 100%;
+            width: 20%;
             margin-top: 10%;
             margin-bottom:10%;
-            margin-left: 0;
+            margin-left: 10%;
+            
             @media @phone {
-                display: flex;
                 
-    
-                flex-direction: column;
-                height: 20%;
-                width: 40%;
+                height: auto;
+                width: auto;
                 margin-top: 10%;
-                margin-bottom:10%;
-                margin-left: 70%;
-                font-size:.5rem;
+                margin-bottom:30%;
+                margin-left: 5%;
+                font-size:1.5rem;
+               
+                padding: 5%;
 
             }
 
@@ -61,9 +60,11 @@
                 justify-content: center;
                 align-items: center;
                 @media @phone {
+                    
                     width: 100%;
                     height:100% ;
-                    font-size: 1.5rem;
+                    font-size: 2.5rem;
+                    
                
                 }
             }
@@ -71,10 +72,14 @@
                 display: flex;
                 height: 55%;
                 margin: 5%;
-                font-size: 2.5rem;
+                font-size: 2rem;
+                
                 @media @phone {
+                    
+                    display: none;
                     width: 100%;
                     height:100% ;
+                   
                     
                
                 }
@@ -88,15 +93,16 @@
                 
                 
                 .btn{
-
+                    
                     display: flex;
                     justify-content:center;
                     block-size: 3rem;
                     width: 10rem;
-                    background-color: @zest;
+                    background-color:@zest;
                     color:white;
                     margin: 0;
-                    border:@codGray solid 1px;
+                    border:none;
+                   
                     
                     cursor: pointer;
                     font-size: 1.5rem;
@@ -104,12 +110,15 @@
                    
                     
                     &:hover {
-                        background-color:@zest;
-                        color:@codGray
+                        border:solid 2px @zest;
+                        color:@codGray;
+                        background:none;
                     }
                     @media @phone {
-                        width: 100%;
-                        height:100% ;
+                        margin-top: 10%;
+                        width: 30%;
+                        height:4rem ;
+                       
                     }
                 }
 
@@ -141,6 +150,7 @@
     .Mid-section{
         display: flex;
         flex-direction:column;
+        margin: 0;
         
         
 
@@ -194,32 +204,20 @@
                 h2{
                     display: flex;
                     justify-content: center;
-                    
-                    font-size: 2.5rem;
+                    font-weight: bolder;
+                    font-size: 3rem;
                     margin: 5%;
-                   
-                
+
                 }
             
-                
                 p{
-                    
                     display:flex;
                     justify-content: center;
                     align-content: center;
                     font-size: 2rem;
-                  
-
                 }
-                
-            }
-           
-
-            
-            
+            }  
         }
-
-
 
         .section2{
             margin: 5%;
@@ -246,7 +244,6 @@
                 color:white;
                 margin: 0;
                 border:@codGray solid 1px;
-                
                 cursor: pointer;
                 font-size: 1.5rem;
                 border-radius: 5px;
@@ -256,10 +253,6 @@
                     height:100% ;
                     font-size: 1rem;
                 }
-    
-                
-               
-                
                 &:hover {
                     background-color:@zest;
                     color:@codGray;
@@ -267,13 +260,14 @@
             }
             div{
                 
-                margin-left: 2%;
+                
                 
                 h2{
                     display: flex;
                     justify-content: center;
-                   
-                    font-size: 2.5rem;
+                    font-weight: bolder;
+                    font-size: 3rem;
+                    
                     margin: 5%;
                    
                 }
@@ -291,70 +285,43 @@
            
         }
     }
-
     .Articles{
         display: flex;
         flex-direction: row;
         width:100%;
         align-items: center;
         margin: 1%;
-        
         @media @phone {
             width: 100%;
             height:100% ;
         }
-
-        
-        
-      
         article{
-            
             margin:1%;
             width:20%;
             height: max-content;
-            
             margin-bottom: 4%;
+            
             @media @phone {
                 display: none;
             }
-
-           
             div{
-                
                 display: flex;
-                
                 justify-content: space-evenly;
-                
                 img{
-                    
-                   
-                    block-size: 12rem;
-                    
-                   
+                    block-size: 18rem;
                 }
             }
-          
             a{
                 display: flex;
-                
-                font-size: 1.5rem;
-                
+                font-size: 1.7rem;
                 text-decoration: none;
                 color: @zest;
-                margin: 2%;
-                
+                margin: 2%;  
             }
-            
-            
-            
             p{
                 display: flex;
-                
                 height: fit-content;
-               
                 margin:2;
-               
-
             }
         }
     }
@@ -362,24 +329,16 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-       
-      
-
-        
-
         h2{
             display: flex;
             font-size: 2.5rem;
             align-self: center;
             justify-content: center;
             @media @phone {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
               
             }
-
-           
         }
-
         .btn{
             display: flex;
             justify-content:center;
@@ -389,18 +348,14 @@
             color: white;
             font-size:1.5rem;
             block-size: 3rem;
-            border:@codGray solid 1px;
+            border:none;
             margin: 3%;
             @media @phone {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 width: 20%;
             }
-
             cursor: pointer;
-            
             border-radius: 5px;
-            
-            
             &:hover {
                 background-color:@zest;
                 color: @codGray;
