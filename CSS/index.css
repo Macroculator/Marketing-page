@@ -173,11 +173,11 @@ nav {
 nav a {
   text-decoration: none;
   font-size: 2rem;
-  color: black;
+  color: white;
   margin: 0 4%;
 }
 nav a:hover {
-  color: #6CF569;
+  color: black;
 }
 nav .header-logo {
   height: 70px;
@@ -227,6 +227,9 @@ footer {
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
+  .header-logo {
+    display: none;
+  }
   .nav-container {
     display: flex;
     max-width: 100%;
@@ -245,6 +248,18 @@ footer {
   .indiv-panel {
     border-radius: 15px;
     width: 55%;
+  }
+  .header-logo1 {
+    height: 80px;
+  }
+  .center-me {
+    margin: 8% 0;
+    text-align: center;
+  }
+}
+@media (min-width: 500px) {
+  .header-logo1 {
+    display: none;
   }
 }
 .container .Top-section {
