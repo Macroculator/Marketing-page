@@ -20,6 +20,8 @@
     max-width: 1200px;
     width: 100%;
     margin: 5% auto;
+
+
 }
 
 .indiv-panel {
@@ -39,6 +41,60 @@
     max-width: 55px;
 }
 
-.abouth3 {
+
+
+.about-h3 {
     margin: 5px 0;
+    font-size: 2.5rem;
+}
+
+// Media Queries for @ or -500px
+
+@media @phone {
+
+    .header-logo {
+        display: none;
+    }
+
+    .nav-container {
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+
+    }
+
+    .team-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-text {
+        font-size: 4.5rem;
+        margin-bottom: 15%;
+
+    }
+
+    .indiv-panel {
+        border-radius: 15px;
+        width: 55%;
+    }
+
+    .header-logo1 {
+        height: 80px;
+
+    }
+
+    .center-me {
+        margin: 8% 0;
+        text-align: center;
+    }
+}
+
+@media @desktop {
+
+    .header-logo1 {
+        display: none;
+    }
 }
