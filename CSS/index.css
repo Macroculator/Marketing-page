@@ -1,6 +1,3 @@
-.flex {
-  display: flex;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -218,6 +215,7 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 20%;
+  font-weight: bold;
   margin-top: 10%;
   margin-bottom: 10%;
   margin-left: 10%;
@@ -226,7 +224,7 @@ footer {
   .container .Top-section .text {
     height: auto;
     width: auto;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-bottom: 30%;
     margin-left: 5%;
     font-size: 1.5rem;
@@ -235,9 +233,9 @@ footer {
 }
 .container .Top-section .text h1 {
   display: flex;
+  justify-content: center;
   font-size: 4rem;
   height: 20%;
-  justify-content: center;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -263,21 +261,22 @@ footer {
 .container .Top-section .text div {
   display: flex;
   justify-content: center;
-  height: 20%;
-  align-items: center;
+  height: 50%;
 }
 .container .Top-section .text div .btn {
   display: flex;
   justify-content: center;
-  block-size: 3rem;
-  width: 10rem;
   background-color: #DB7C1E;
   color: white;
-  margin: 0;
-  border: none;
   cursor: pointer;
-  font-size: 1.5rem;
   border-radius: 5px;
+  margin: 3%;
+  border: none;
+  font-size: 1.8rem;
+  width: auto;
+  height: auto;
+  align-items: center;
+  padding: 3%;
 }
 .container .Top-section .text div .btn:hover {
   border: solid 2px #DB7C1E;
@@ -286,9 +285,9 @@ footer {
 }
 @media (max-width: 500px) {
   .container .Top-section .text div .btn {
-    margin-top: 10%;
-    width: 30%;
-    height: 4rem ;
+    margin: 3;
+    width: auto;
+    height: auto ;
   }
 }
 .container .Top-section .image img {
@@ -309,14 +308,15 @@ footer {
 }
 .container .Mid-section .section1 {
   display: flex;
+  justify-content: center;
+  background-color: #fafafa;
   flex-direction: row;
   margin: 5%;
   align-items: center;
-  justify-content: center;
 }
 @media (max-width: 500px) {
   .container .Mid-section .section1 {
-    width: 100%;
+    width: auto;
     height: 100% ;
   }
 }
@@ -332,44 +332,21 @@ footer {
   justify-content: center;
   align-content: center;
   font-size: 2rem;
+  margin: 5%;
 }
 .container .Mid-section .section2 {
   margin: 5%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: #fafafa;
 }
 @media (max-width: 500px) {
   .container .Mid-section .section2 {
-    width: 100%;
+    width: auto;
     height: 100% ;
   }
-}
-.container .Mid-section .section2 .btn {
-  display: flex;
-  justify-content: center;
-  block-size: 3rem;
-  align-items: center;
-  width: 10rem;
-  background-color: #DB7C1E;
-  color: white;
-  margin: 0;
-  border: #2d3032 solid 1px;
-  cursor: pointer;
-  font-size: 1.5rem;
-  border-radius: 5px;
-}
-@media (max-width: 500px) {
-  .container .Mid-section .section2 .btn {
-    width: 50%;
-    height: 100% ;
-    font-size: 1rem;
-  }
-}
-.container .Mid-section .section2 .btn:hover {
-  background-color: #DB7C1E;
-  color: #2d3032;
 }
 .container .Mid-section .section2 div h2 {
   display: flex;
@@ -381,15 +358,15 @@ footer {
 .container .Mid-section .section2 div p {
   display: flex;
   justify-content: center;
-  align-content: center;
+  margin: 5%;
   font-size: 2rem;
 }
 .container .Articles {
   display: flex;
   flex-direction: row;
   width: 100%;
-  align-items: center;
-  margin: 1%;
+  justify-content: space-evenly;
+  margin: auto;
 }
 @media (max-width: 500px) {
   .container .Articles {
@@ -429,43 +406,35 @@ footer {
 }
 .container .End-section {
   display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+.container .End-section a {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-}
-.container .End-section h2 {
-  display: flex;
-  font-size: 2.5rem;
-  align-self: center;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .container .End-section h2 {
-    font-size: 1.7rem;
-  }
-}
-.container .End-section .btn {
-  display: flex;
-  justify-content: center;
-  width: 10rem;
-  height: 10%;
   background-color: #DB7C1E;
   color: white;
-  font-size: 1.5rem;
-  block-size: 3rem;
-  border: none;
-  margin: 3%;
   cursor: pointer;
   border-radius: 5px;
+  flex-wrap: nowrap;
+  width: 20%;
+  height: 50%;
+  font-size: 2em;
+  text-decoration: none;
+  border: none;
+  margin: 3%;
+  padding: 1%;
 }
-@media (max-width: 500px) {
-  .container .End-section .btn {
-    font-size: 1.2rem;
-    width: 20%;
-  }
-}
-.container .End-section .btn:hover {
+.container .End-section a:hover {
   background-color: #DB7C1E;
   color: #2d3032;
+}
+@media (max-width: 500px) {
+  .container .End-section a {
+    font-size: 1.7rem;
+    width: 100%;
+  }
 }
 .team-text {
   display: flex;
