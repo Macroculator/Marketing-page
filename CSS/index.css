@@ -261,6 +261,7 @@ footer {
 .container .Top-section .text div {
   display: flex;
   justify-content: center;
+  height: 50%;
 }
 .container .Top-section .text div .btn {
   display: flex;
@@ -269,12 +270,13 @@ footer {
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  margin: 0;
+  margin: 3%;
   border: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: auto;
   height: auto;
   align-items: center;
+  padding: 3%;
 }
 .container .Top-section .text div .btn:hover {
   border: solid 2px #DB7C1E;
@@ -283,7 +285,7 @@ footer {
 }
 @media (max-width: 500px) {
   .container .Top-section .text div .btn {
-    margin-top: 20%;
+    margin: 3;
     width: auto;
     height: auto ;
   }
