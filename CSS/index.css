@@ -292,11 +292,13 @@ footer p {
   height: auto;
   align-items: center;
   padding: 3%;
+  text-decoration: none;
 }
 .container .Top-section .text div .btn:hover {
   border: solid 2px #DB7C1E;
   color: #2d3032;
   background: none;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
   .container .Top-section .text div .btn {
