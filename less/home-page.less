@@ -43,9 +43,9 @@
                 
                 height: auto;
                 width: auto;
-                margin-top: 0%;
-                margin-bottom:0%;
-                margin-left: 0%;
+                margin-top: 10%;
+                margin-bottom:30%;
+                margin-left: 5%;
                 font-size:1.5rem;
                
                 padding: 5%;
@@ -54,7 +54,7 @@
 
             h1{
                 display: flex;
-              
+                
                 font-size: 4rem;
                 height:20%;
                 justify-content: center;
@@ -63,7 +63,7 @@
                     
                     width: 100%;
                     height:100% ;
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     
                
                 }
@@ -73,10 +73,10 @@
                 height: 55%;
                 margin: 5%;
                 font-size: 2rem;
-             
+                
                 @media @phone {
                     
-                    
+                    display: none;
                     width: 100%;
                     height:100% ;
                    
@@ -93,15 +93,15 @@
                 
                 
                 .btn{
-
+                    
                     display: flex;
                     justify-content:center;
                     block-size: 3rem;
                     width: 10rem;
-                    background-color: @zest;
+                    background-color:@zest;
                     color:white;
                     margin: 0;
-                    border:@codGray solid 1px;
+                    border:none;
                    
                     
                     cursor: pointer;
@@ -110,13 +110,14 @@
                    
                     
                     &:hover {
-                        background-color:@zest;
-                        color:@codGray
+                        border:solid 2px @zest;
+                        color:@codGray;
+                        background:none;
                     }
                     @media @phone {
-                        margin-bottom: 5%;
-                        width: 25%;
-                        height:3rem ;
+                        margin-top: 10%;
+                        width: 30%;
+                        height:4rem ;
                        
                     }
                 }
@@ -149,6 +150,7 @@
     .Mid-section{
         display: flex;
         flex-direction:column;
+        margin: 0;
         
         
 
@@ -202,8 +204,8 @@
                 h2{
                     display: flex;
                     justify-content: center;
-                    
-                    font-size: 2.5rem;
+                    font-weight: bolder;
+                    font-size: 3rem;
                     margin: 5%;
 
                 }
@@ -258,13 +260,14 @@
             }
             div{
                 
-                margin-left: 2%;
+                
                 
                 h2{
                     display: flex;
                     justify-content: center;
-                   
-                    font-size: 2.5rem;
+                    font-weight: bolder;
+                    font-size: 3rem;
+                    
                     margin: 5%;
                    
                 }
@@ -297,6 +300,7 @@
             width:20%;
             height: max-content;
             margin-bottom: 4%;
+            
             @media @phone {
                 display: none;
             }
@@ -304,7 +308,7 @@
                 display: flex;
                 justify-content: space-evenly;
                 img{
-                    block-size: 20rem;
+                    block-size: 18rem;
                 }
             }
             a{
@@ -331,7 +335,7 @@
             align-self: center;
             justify-content: center;
             @media @phone {
-                font-size: 1.5rem;
+                font-size: 1.7rem;
               
             }
         }
@@ -344,10 +348,10 @@
             color: white;
             font-size:1.5rem;
             block-size: 3rem;
-            border:@codGray solid 1px;
+            border:none;
             margin: 3%;
             @media @phone {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 width: 20%;
             }
             cursor: pointer;
