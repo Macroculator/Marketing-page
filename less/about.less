@@ -1,10 +1,13 @@
 // About page styling
 
 .team-text {
-    display: flex;
+    .flex();
     justify-content: center;
     margin-top: 5%;
     font-size: 5.5rem;
+    font-weight: bold;
+    padding-top: 10px;
+
 }
 
 .team-box {
@@ -14,13 +17,19 @@
         color: black;
     }
 
-    display: flex;
+    .flex();
     flex-wrap: wrap;
     justify-content: space-evenly;
     max-width: 1200px;
     width: 100%;
     margin: 5% auto;
 
+    h2 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        padding-top: 10px;
+
+    }
 
 }
 
@@ -39,6 +48,7 @@
 
 .linked-in-logo {
     max-width: 55px;
+    margin: 0 3px;
 }
 
 
@@ -52,28 +62,34 @@
 
 @media @phone {
 
+    .anchor-div {
+        .flex();
+        justify-content: space-evenly;
+        margin: 3%;
+        width: 100%;
+    }
+
     .header-logo {
         display: none;
     }
 
     .nav-container {
-        display: flex;
-        max-width: 100%;
-        width: 100%;
+        .flex();
         justify-content: space-evenly;
+        width: 100%;
 
     }
 
     .team-box {
-        display: flex;
+        .flex();
         flex-direction: column;
         align-items: center;
     }
 
     .team-text {
-        font-size: 4.5rem;
+        font-size: 3.5rem;
         margin-bottom: 15%;
-
+        font-weight: bold;
     }
 
     .indiv-panel {
@@ -82,13 +98,17 @@
     }
 
     .header-logo1 {
-        height: 80px;
+        height: 10rem;
 
     }
 
     .center-me {
         margin: 8% 0;
         text-align: center;
+    }
+
+    h1 {
+        font-weight: 700;
     }
 }
 
