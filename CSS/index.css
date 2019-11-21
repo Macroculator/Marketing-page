@@ -166,6 +166,11 @@ p {
   border-bottom: 1px solid black;
   height: 100px;
 }
+.anchor-div {
+  display: flex;
+  justify-content: space-around;
+  margin: 3%;
+}
 nav {
   z-index: 1;
   position: fixed;
@@ -546,6 +551,9 @@ footer p {
   .center-me {
     margin: 8% 0;
     text-align: center;
+  }
+  h1 {
+    font-weight: 700;
   }
 }
 @media (min-width: 500px) {
