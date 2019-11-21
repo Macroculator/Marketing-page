@@ -1,6 +1,3 @@
-.flex {
-  display: flex;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,8 +165,9 @@ p {
 }
 .anchor-div {
   display: flex;
-  justify-content: space-around;
-  margin: 3%;
+  justify-content: space-between;
+  margin: 1%;
+  width: 30%;
 }
 nav {
   z-index: 1;
@@ -202,7 +200,7 @@ footer {
   align-items: center;
   background-color: #DB7C1E;
   width: 100%;
-  height: 50px;
+  height: 70px;
 }
 footer p {
   color: white;
@@ -517,20 +515,26 @@ footer p {
 }
 .linked-in-logo {
   max-width: 55px;
+  margin: 0 3px;
 }
 .about-h3 {
   margin: 5px 0;
   font-size: 2.5rem;
 }
 @media (max-width: 500px) {
+  .anchor-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3%;
+    width: 100%;
+  }
   .header-logo {
     display: none;
   }
   .nav-container {
     display: flex;
-    max-width: 100%;
-    width: 100%;
     justify-content: space-evenly;
+    width: 100%;
   }
   .team-box {
     display: flex;
@@ -540,6 +544,7 @@ footer p {
   .team-text {
     font-size: 4.5rem;
     margin-bottom: 15%;
+    font-weight: bold;
   }
   .indiv-panel {
     border-radius: 15px;
