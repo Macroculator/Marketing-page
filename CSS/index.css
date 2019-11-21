@@ -202,6 +202,9 @@ footer {
   width: 100%;
   height: 70px;
 }
+footer a {
+  text-decoration: none;
+}
 footer p {
   color: white;
 }
@@ -542,7 +545,7 @@ footer p {
     align-items: center;
   }
   .team-text {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin-bottom: 15%;
     font-weight: bold;
   }
@@ -551,7 +554,7 @@ footer p {
     width: 55%;
   }
   .header-logo1 {
-    height: 80px;
+    height: 10rem;
   }
   .center-me {
     margin: 8% 0;
