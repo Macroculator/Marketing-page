@@ -36,7 +36,7 @@
             flex-direction: column;
             height: 100%;
             width: 20%;
-            font-weight: bold;
+           
             margin-top: 10%;
             margin-bottom: 10%;
             margin-left: 10%;
@@ -57,8 +57,8 @@
             h1 {
                 .display();
                 font-size: 4rem;
-                height: 20%;
-
+                height:20%;
+                font-weight: bold;
                 align-items: center;
 
                 @media @phone {
@@ -75,8 +75,9 @@
                 display: flex;
                 height: 55%;
                 margin: 5%;
-                font-size: 2rem;
-
+                font-size: 2rem; 
+                
+                
                 @media @phone {
 
                     display: none;
@@ -104,12 +105,14 @@
                     height: auto;
                     align-items: center;
                     padding: 3%;
-
-
+                    text-decoration: none;
+                   
+                    
                     &:hover {
-                        border: solid 2px @zest;
-                        color: @codGray;
-                        background: none;
+                        border:solid 2px @zest;
+                        color:@codGray;
+                        background:none;
+                        text-decoration: none;
                     }
 
                     @media @phone {
